@@ -25,7 +25,14 @@ class Feeds:
             for i in feed_config['contents'](context):
                 fe = fg.add_entry()
 
-                fe.title(i['content_title'])
+                if i['content_title']:
+                    fe.title(i['content_title'])
+                elif i['title']:
+                    fe.title(i['title'])
+                else:
+                    raise Exception("Feedgen: Content '{}' is missing a 'content_title' or 'title'. Can not create Feed.".
+                            format(i["path"]))
+
                 fe.content(i['content_body'], type='html')
 
                 fe.link({
@@ -53,9 +60,6 @@ class Feeds:
 
                 if i['summary']:
                     fe.summary(str(i['summary']))
-
-                if i['title']:
-                    fe.title(i['title'])
 
             if feed_config['type'] == 'atom':
                 content['content'] = fg.atom_str().decode()
