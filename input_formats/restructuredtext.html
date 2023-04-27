@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>reStructuredText &mdash; Flamingo</title>
+      <link rel="stylesheet" href="/static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="/static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="/static/sphinx_themes/jquery.js"></script>
+        <script src="/static/sphinx_themes/mark.min.js"></script>
+        <script src="/static/sphinx_themes/helper.js"></script>
+        <script src="/search_variables.js"></script>
+        <script src="/static/sphinx_themes/main.js"></script>
+    <script src="/static/js/theme.js"></script>
+    <link rel="search" title="Search" href="/search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="/" class="icon icon-home">
+            Flamingo
+              <img src="/static/flamingo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              
+  <p class="caption"><span class="caption-text">User Documentation</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/getting_started.html" class="reference internal">Getting started</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/basic_concepts.html" class="reference internal">Basic concepts</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/settings.html" class="reference internal">Settings</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/writing_content.html" class="reference internal">Writing Content</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/live_server.html" class="reference internal">flamingo Live-Server</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/shell.html" class="reference internal">flamingo Shell</a>
+        
+        
+      </li>
+    </ul>
+  
+
+  <p class="caption"><span class="caption-text">Input Formats</span></p>
+  
+    <ul>
+      <li class="toctree-l1 current">
+        
+          <a href="/input_formats/restructuredtext.html" class="reference internal">reStructuredText</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/input_formats/markdown.html" class="reference internal">Markdown</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/input_formats/html.html" class="reference internal">HTML</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/input_formats/yaml.html" class="reference internal">YAML</a>
+        
+        
+      </li>
+    </ul>
+  
+
+  <p class="caption"><span class="caption-text">Plugins</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/authors.html" class="reference internal">Authors</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/feeds.html" class="reference internal">Feeds</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/git.html" class="reference internal">Git</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/i18n.html" class="reference internal">I18N</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/layers.html" class="reference internal">Layers</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/menu.html" class="reference internal">Menu</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/photoswipe.html" class="reference internal">Photoswipe</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/redirects.html" class="reference internal">Redirects</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/tags.html" class="reference internal">Tags</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/thumnails.html" class="reference internal">Thumbnails</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/jquery.html" class="reference internal">jQuery</a>
+        
+        
+      </li>
+    </ul>
+  
+
+  <p class="caption"><span class="caption-text">Cookbook</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_write_a_plugin.html" class="reference internal">How to write a plugin</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_use_settings_hooks.html" class="reference internal">How to use a settings hook</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_write_a_parser.html" class="reference internal">How to write a parser</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_add_a_rst_directive.html" class="reference internal">How to add a rst directive</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_add_a_jinja2_filter.html" class="reference internal">How to add a Jinja2 filter</a>
+        
+        
+      </li>
+    </ul>
+  
+
+  <p class="caption"><span class="caption-text">Developer Documentation</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/developer/CHANGELOG.html" class="reference internal">Changelog</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/developer/how_to_contribute.html" class="reference internal">How to contribute</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/developer/data_model.html" class="reference internal">Data model</a>
+        
+        
+      </li>
+    </ul>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="/">Flamingo</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="/" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="/input-formats/index.html">Input Formats</a></li>
+      <li class="breadcrumb-item active">reStructuredText</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="/_sources/input_formats/restructuredtext.rst" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>reStructuredText</h1>
+<div class="section" id="restructuredtext">
+<p>The plugin <tt class="docutils literal">flamingo.plugins.reStructuredText</tt> adds support for
+reStructuredText using <a class="reference external" href="https://docutils.sourceforge.io/">docutils</a>.</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span>title: hello world
+
+
+<span class="gh">Hello World!</span>
+<span class="gh">============</span>
+
+Lorem ipsum
+</pre></div>
+
+  
+</div><div class="section" id="settings">
+<h3>Settings</h3>
+
+<div class="raw-setting">
+    <div class="highlight"><pre><span></span><span class="n">RST_SETTINGS_OVERRIDES</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+
+    <div class="description">
+        <p>The parser sets some defaults in the reStructuredText parser settings.
+You can override them here. List of all settings:
+[<a class="reference external" href="https://docutils.sourceforge.io/docs/user/config.html">link</a>]</p>
+
+    </div>
+</div>
+
+<div class="setting">
+    <div class="highlight">
+        <pre>DEFAULT_IMAGE_TEMPLATE = </pre><pre><div class="highlight"><span class="s1">&#39;image.html&#39;</span>
+</div>
+</pre>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="setting-description"></div>
+
+<div class="setting">
+    <div class="highlight">
+        <pre>DEFAULT_GALLERY_TEMPLATE = </pre><pre><div class="highlight"><span class="s1">&#39;gallery.html&#39;</span>
+</div>
+</pre>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="setting-description"></div>
+
+<div class="raw-setting">
+    <div class="highlight"><pre><span></span><span class="n">RST_IMAGE_EXTRA_OPTION_SPEC</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+
+    <div class="description">
+        
+    </div>
+</div>
+
+<div class="raw-setting">
+    <div class="highlight"><pre><span></span><span class="n">RST_GALLERY_EXTRA_OPTION_SPEC</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+
+    <div class="description">
+        
+    </div>
+</div>
+
+<div class="raw-setting">
+    <div class="highlight"><pre><span></span><span class="n">RST_IMAGE_DIRECTIVE_NAMES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;img&#39;</span><span class="p">,</span> <span class="s1">&#39;image&#39;</span><span class="p">]</span>
+</pre></div>
+
+    <div class="description">
+        
+    </div>
+</div>
+
+<div class="raw-setting">
+    <div class="highlight"><pre><span></span><span class="n">RST_GALLERY_DIRECTIVE_NAMES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;gallery&#39;</span><span class="p">]</span>
+</pre></div>
+
+    <div class="description">
+        
+    </div>
+</div>
+
+<div class="raw-setting">
+    <div class="highlight"><pre><span></span><span class="n">RST_IMAGE_CAPTION_RAW</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+
+    <div class="description">
+        <p>When set to <tt class="docutils literal">True</tt> no inline rst is allowed in image captions</p>
+
+    </div>
+</div>
+
+<div class="raw-setting">
+    <div class="highlight"><pre><span></span><span class="n">RST_REMOVE_SYSTEM_MESSAGES_FROM_OUPUT</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+
+    <div class="description">
+        <p>By default reStructuredText adds system messages to the HTML output</p>
+
+    </div>
+</div>
+</div>
+<div class="section" id="links">
+<h3>Links</h3>
+<p>The reStructuredText subsystem uses a text role named <tt class="docutils literal">:link:</tt> for internal
+and external links.</p>
+<p>Link support gets handled by <tt class="docutils literal">flamingo.plugins.rstLink</tt>.</p>
+<div class="section" id="external-links">
+<h4>External links</h4>
+<p>Flamingo determines if a link is external by checking if the link target
+defines a protocol like <tt class="docutils literal"><span class="pre">http://</span></tt>, <tt class="docutils literal"><span class="pre">ftp://</span></tt> or <tt class="docutils literal">mailto:</tt>.</p>
+<p>If no link title is given, the target is used as title.</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span><span class="gh">Link with title</span>
+<span class="gh">===============</span>
+
+<span class="na">:link:</span><span class="nv">`Flamingo documentation &lt;http://flamingo.org&gt;`</span>
+
+
+<span class="gh">Link without Title</span>
+<span class="gh">==================</span>
+
+<span class="na">:link:</span><span class="nv">`http://flamingo.org`</span>
+</pre></div>
+
+  
+</div></div>
+<div class="section" id="internal-links-downloads">
+<h4>Internal links, downloads</h4>
+<p>Internal links always have to point to real paths in <tt class="docutils literal">settings.CONTENT_ROOT</tt>.
+Paths are always relative to the current file, except if the path starts with
+<tt class="docutils literal">/</tt>. In this case it has to be a absolute path.</p>
+<p>Link targets can be downloadable files.</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span><span class="gh">Link with title</span>
+<span class="gh">===============</span>
+
+<span class="na">:link:</span><span class="nv">`home.rst`</span>
+
+
+<span class="gh">Link without Title</span>
+<span class="gh">==================</span>
+
+<span class="na">:link:</span><span class="nv">`Link to home &lt;home.rst&gt;`</span>
+</pre></div>
+
+  
+</div></div>
+</div>
+<div class="section" id="images">
+<h3>Images</h3>
+<p>Images get handled by a directive. All extra options can be left out.
+The first argument of the directive has to be the path to your image. If the
+path starts with a <tt class="docutils literal">/</tt>, the path has to be absolute to the <tt class="docutils literal">CONTENT_ROOT</tt>,
+if not, relative to the content file, the image is used in.</p>
+<p>Image support gets handled by <tt class="docutils literal">flamingo.plugins.rstImage</tt>.</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> foo.png
+
+<span class="p">..</span> <span class="ow">image</span><span class="p">::</span> bar.png
+    <span class="nc">:template:</span> &#39;image.html&#39;  # if not set DEFAULT_IMAGE_TEMPLATE gets used
+    <span class="nc">:align:</span> left  # possible values: &#39;left&#39;, &#39;center&#39;, &#39;right&#39;
+    <span class="nc">:clear:</span> both
+    <span class="nc">:width:</span> 200px
+    <span class="nc">:height:</span> 200px
+    <span class="nc">:link:</span> www.example.org
+    <span class="nc">:alt:</span> My bar image
+    <span class="nc">:title:</span> My bar image
+
+    This is the caption of my bar image.
+</pre></div>
+
+  
+</div><div class="section" id="extending-the-image-directive">
+<h4>Extending the image directive</h4>
+<p>If you need more options, you don't have to create a new image directive, you
+can extend the existing one.</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span><span class="c1"># settings.py</span>
+<span class="kn">from</span> <span class="nn">docutils.parsers.rst</span> <span class="kn">import</span> <span class="n">directives</span>
+
+<span class="n">RST_IMAGE_EXTRA_OPTION_SPEC</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;licence&#39;</span><span class="p">:</span> <span class="n">directives</span><span class="o">.</span><span class="n">unchanged</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+  
+</div><div class="code-block">
+  <div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> foo.png
+    <span class="nc">:license:</span> Apache2
+    <span class="nc">:template:</span> licensed_image.html
+</pre></div>
+
+  
+</div><div class="code-block">
+  <div class="highlight"><pre><span></span><span class="cm">&lt;!-- theme/templates/licensed_image.html --&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;{{ content.url }}&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This image is licensed under {{ content.license }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+
+  
+</div></div>
+<div class="section" id="galleries">
+<h4>Galleries</h4>
+<p>Galleries are used to group images together.</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">gallery</span><span class="p">::</span>
+
+<span class="p">    ..</span> <span class="ow">image</span><span class="p">::</span> image1.png
+
+        This is the first image of this gallery.
+
+<span class="p">    ..</span> <span class="ow">image</span><span class="p">::</span> image1.png
+
+        This is the second.
+</pre></div>
+
+  
+</div></div>
+</div>
+<div class="section" id="code-blocks">
+<h3>Code blocks</h3>
+<p>Code blocks are add support for <a class="reference external" href="https://pygments.org/">pygments</a>.
+To use code blocks flamingo has to be installed with pygments support.</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span># REQUIREMENTS.txt
+
+flamingo[pygments]
+</pre></div>
+
+  
+</div><div class="code-block">
+  <div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+  
+</div></div>
+</div>
+
+
+           </div>
+          </div>
+          <hr />
+Built with <a href="http://www.flamingo-web.org">Flamingo</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> by <a href="https://readthedocs.org">Read the Docs</a>.
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

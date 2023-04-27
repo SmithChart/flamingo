@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing Content &mdash; Flamingo</title>
+      <link rel="stylesheet" href="/static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="/static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="/static/sphinx_themes/jquery.js"></script>
+        <script src="/static/sphinx_themes/mark.min.js"></script>
+        <script src="/static/sphinx_themes/helper.js"></script>
+        <script src="/search_variables.js"></script>
+        <script src="/static/sphinx_themes/main.js"></script>
+    <script src="/static/js/theme.js"></script>
+    <link rel="search" title="Search" href="/search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="/" class="icon icon-home">
+            Flamingo
+              <img src="/static/flamingo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              
+  <p class="caption"><span class="caption-text">User Documentation</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/getting_started.html" class="reference internal">Getting started</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/basic_concepts.html" class="reference internal">Basic concepts</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/settings.html" class="reference internal">Settings</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1 current">
+        
+          <a href="/user/writing_content.html" class="reference internal">Writing Content</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/live_server.html" class="reference internal">flamingo Live-Server</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/user/shell.html" class="reference internal">flamingo Shell</a>
+        
+        
+      </li>
+    </ul>
+  
+
+  <p class="caption"><span class="caption-text">Input Formats</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/input_formats/restructuredtext.html" class="reference internal">reStructuredText</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/input_formats/markdown.html" class="reference internal">Markdown</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/input_formats/html.html" class="reference internal">HTML</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/input_formats/yaml.html" class="reference internal">YAML</a>
+        
+        
+      </li>
+    </ul>
+  
+
+  <p class="caption"><span class="caption-text">Plugins</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/authors.html" class="reference internal">Authors</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/feeds.html" class="reference internal">Feeds</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/git.html" class="reference internal">Git</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/i18n.html" class="reference internal">I18N</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/layers.html" class="reference internal">Layers</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/menu.html" class="reference internal">Menu</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/photoswipe.html" class="reference internal">Photoswipe</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/redirects.html" class="reference internal">Redirects</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/tags.html" class="reference internal">Tags</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/thumnails.html" class="reference internal">Thumbnails</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/plugins/jquery.html" class="reference internal">jQuery</a>
+        
+        
+      </li>
+    </ul>
+  
+
+  <p class="caption"><span class="caption-text">Cookbook</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_write_a_plugin.html" class="reference internal">How to write a plugin</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_use_settings_hooks.html" class="reference internal">How to use a settings hook</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_write_a_parser.html" class="reference internal">How to write a parser</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_add_a_rst_directive.html" class="reference internal">How to add a rst directive</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/cookbook/how_to_add_a_jinja2_filter.html" class="reference internal">How to add a Jinja2 filter</a>
+        
+        
+      </li>
+    </ul>
+  
+
+  <p class="caption"><span class="caption-text">Developer Documentation</span></p>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/developer/CHANGELOG.html" class="reference internal">Changelog</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/developer/how_to_contribute.html" class="reference internal">How to contribute</a>
+        
+        
+      </li>
+    </ul>
+  
+    <ul>
+      <li class="toctree-l1">
+        
+          <a href="/developer/data_model.html" class="reference internal">Data model</a>
+        
+        
+      </li>
+    </ul>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="/">Flamingo</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="/" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="/user-documentation/index.html">User Documentation</a></li>
+      <li class="breadcrumb-item active">Writing Content</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="/_sources/user/writing_content.rst" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Writing Content</h1>
+<div class="section" id="writing-content">
+<p><strong>Note:</strong> The syntax for features like HTML links or images may vary between
+different input formats.</p>
+<p>Content files consists of two sections: Meta data and content. The meta data
+get parsed by <a class="reference external" href="https://pyyaml.org/wiki/PyYAMLDocumentation">YAML</a>, the
+content according to the file extension.</p>
+<p>The meta data block comes first and is divided from the content block by two
+or more blank lines. If you won't set any meta data your content file has to
+start with two or more blank lines.</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span># content/hello-world.rst
+title: hello-world
+a: foo
+b: bar
+
+
+<span class="gh">Hello World!</span>
+<span class="gh">============</span>
+
+Lorem Ipsum
+</pre></div>
+
+  
+</div><p>The parsed <tt class="docutils literal">flamingo.Content</tt> object will look like this:</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">content</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="s1">&#39;hello-world&#39;</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">content</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="s1">&#39;foo&#39;</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">content</span><span class="p">[</span><span class="s1">&#39;content_title&#39;</span><span class="p">]</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="s1">&#39;Hello World!&#39;</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">content</span><span class="p">[</span><span class="s1">&#39;content_body&#39;</span><span class="p">]</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="s1">&#39;&lt;p&gt;Lorem Ipsum&lt;/p&gt;&#39;</span>
+</pre></div>
+
+  
+</div><div class="section" id="special-attributes">
+<h3>Special Attributes</h3>
+<table border="1" class="docutils">
+  <tbody valign="top">
+    
+      <tr>
+        
+          
+            <th align="left">Name </th>
+          
+        
+          
+            <th align="left">Description</th>
+          
+        
+      </tr>
+    
+      <tr>
+        
+          
+            <td align="left">path </td>
+          
+        
+          
+            <td align="left">Contains the path to this content, relative to the CONTENT_ROOT. This attribute is set by flamingo and is not meant to be set in a content file.</td>
+          
+        
+      </tr>
+    
+      <tr>
+        
+          
+            <td align="left">output </td>
+          
+        
+          
+            <td align="left">Contains the output path of this content. If not set it gets auto generated from its path.  When the path is foo/bar/bar.rst the output would be foo/bar/bar.html</td>
+          
+        
+      </tr>
+    
+      <tr>
+        
+          
+            <td align="left">url </td>
+          
+        
+          
+            <td align="left">a linkable url to this content</td>
+          
+        
+      </tr>
+    
+      <tr>
+        
+          
+            <td align="left">title </td>
+          
+        
+          
+            <td align="left">content of the HTML title tag when rendering</td>
+          
+        
+      </tr>
+    
+      <tr>
+        
+          
+            <td align="left">template </td>
+          
+        
+          
+            <td align="left">template name that gets used to render the content. Default is page.html. You can change this to your own template name</td>
+          
+        
+      </tr>
+    
+      <tr>
+        
+          
+            <td align="left">content_title </td>
+          
+        
+          
+            <td align="left">all parsers split the content in its first heading and all following content. content_title holds the first heading of the content</td>
+          
+        
+      </tr>
+    
+      <tr>
+        
+          
+            <td align="left">content_body </td>
+          
+        
+          
+            <td align="left">all parsers split the content in its first heading and all following content. content_body holds the all content but the first heading</td>
+          
+        
+      </tr>
+    
+      <tr>
+        
+          
+            <td align="left">media </td>
+          
+        
+          
+            <td align="left">a flamingo.core.data_model.ContentSet that holds all paths of media files used in this content</td>
+          
+        
+      </tr>
+    
+  </tbody>
+</table></div>
+<div class="section" id="using-jinja2-syntax">
+<h3>Using Jinja2 Syntax</h3>
+<p>When <tt class="docutils literal">settings.PRE_RENDER_CONTENT</tt> is enabled, every content file can be a
+template:</p>
+<div class="code-block">
+  <div class="highlight"><pre><span></span><span class="x"># content/test.html</span>
+<span class="x">title: test</span>
+
+
+<span class="x">&lt;h1&gt;List of all Contents with the tag &quot;foo&quot;&lt;/h1&gt;</span>
+
+<span class="x">&lt;ul&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">for</span> <span class="nv">content</span> <span class="k">in</span> <span class="nv">context.contents.filter</span><span class="o">(</span><span class="nv">tags__contains</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="o">)</span> <span class="cp">%}</span>
+<span class="x">        &lt;a href=&quot;</span><span class="cp">{{</span> <span class="nv">content.url</span> <span class="cp">}}</span><span class="x">&quot;&gt;</span><span class="cp">{{</span> <span class="nv">content.title</span> <span class="cp">}}</span><span class="x">&lt;/a&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+<span class="x">&lt;/ul&gt;</span>
+</pre></div>
+
+  
+</div><div class="section" id="generating-links">
+<h4>Generating links</h4>
+<div class="code-block">
+  <div class="highlight"><pre><span></span># content/link.rst
+title: link
+
+
+<span class="gh">Link to &quot;Test document&quot;</span>
+<span class="gh">=======================</span>
+
+{{ link(&#39;content/test.rst&#39;, &#39;Test document&#39;) }}
+</pre></div>
+
+  
+</div></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <hr />
+Built with <a href="http://www.flamingo-web.org">Flamingo</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> by <a href="https://readthedocs.org">Read the Docs</a>.
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
