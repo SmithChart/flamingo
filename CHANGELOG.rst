@@ -3,6 +3,21 @@
 Changelog
 =========
 
+`v1.10.2 <https://github.com/pengutronix/flamingo/compare/v1.10.1...v1.10.2>`_ (2025-11-21)
+-------------------------------------------------------------------------------------------
+
+Changes
+~~~~~~~
+
+* plugins/feeds: Render summary before writing it to the feed.
+* plugins/redirects: Allow to use tabs or spaces as separator between columns.
+* plugins/rst: Set referer policy for embedded YouTube videos.
+
+Bugfixes
+~~~~~~~~
+
+* plugins/sphinx-themes: Dependency to setuptools is needed starting with Python 3.12.
+
 `v1.10.1 <https://github.com/pengutronix/flamingo/compare/v1.10...v1.10.1>`_ (2024-04-23)
 -----------------------------------------------------------------------------------------
 
