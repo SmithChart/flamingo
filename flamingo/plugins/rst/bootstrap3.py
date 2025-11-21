@@ -72,7 +72,7 @@ def _gen_directives(context):
 
         template = """
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="{url}"></iframe>
+                <iframe class="embed-responsive-item" src="{url}" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
         """
 
