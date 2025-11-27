@@ -96,14 +96,10 @@ class JsonRpc:
 
     # websocket helper ########################################################
     async def send_str(self, websocket, string):
-        try:
-            await websocket.send_str(string)
-
-        except ConnectionResetError:
+        with contextlib.suppress(ConnectionResetError):
             # this exception gets handled by aiohttp internally and
             # can be ignored
-
-            pass
+            await websocket.send_str(string)
 
     # notifications ###########################################################
     def notify(self, topic, message, wait=False):
