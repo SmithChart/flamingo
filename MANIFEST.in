@@ -2,5 +2,7 @@ global-exclude .*
 global-exclude *~
 global-exclude *.swp
 global-exclude *.pyc
+exclude doc
+exclude tests
 
 recursive-include flamingo/ *
